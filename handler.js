@@ -1,7 +1,6 @@
 module.exports.helloWorld = (event, context, callback) => {
-  const response = {
-    body: 'Hello world!\n',
-  };
-
-  callback(null, response);
+  callback(null, {
+//    body: process.env.MESSAGE + ' ' + '\n',
+    body: `${process.env.MESSAGE} Secret ${process.env.MY_SECRET}\n`
+  });
 };
