@@ -3,7 +3,7 @@ service: serverless-hello-world
 provider:
   name: aws
   runtime: nodejs6.10
-  environment: ${self:custom.${self:opt.stage}}
+  environment: ${self:custom.${opt:stage}}
 
 custom:
   production: 
