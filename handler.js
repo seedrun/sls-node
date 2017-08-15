@@ -4,3 +4,4 @@ module.exports.helloWorld = (event, context, callback) => {
     body: `${process.env.MESSAGE} Secret ${process.env.MY_SECRET}\n`
   });
 };
+
