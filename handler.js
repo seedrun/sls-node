@@ -1,5 +1,5 @@
 module.exports.helloWorld = (event, context, callback) => {
   callback(null, {
-    body: 'Hello World!\n'
+    body: 'Go Serverless v1.0! Your function executed successfully!\n'
   });
 };
