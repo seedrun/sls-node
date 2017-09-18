@@ -6,7 +6,7 @@ module.exports.helloWorld = (event, context, callback) => {
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
-    body: `${process.env.MESSAGE}.\n`
+    body: `${process.env.MESSAGE}, secret is ${process.env.MY_SECRET}.\n`
   };
 
   callback(null, response);
