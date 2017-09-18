@@ -6,7 +6,7 @@ module.exports.helloWorld = (event, context, callback) => {
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
-    body: 'Go Serverless v1.0! Your function executed successfully!',
+    body: `${process.env.MESSAGE}.\n`
   };
 
   callback(null, response);
