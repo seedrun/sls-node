@@ -1,5 +1,7 @@
 service: serverless-hello-world
 
+frameworkVersion: "1.21.0"
+
 custom:                                                                                                  
   myStage: ${opt:stage, self:provider.stage}                                                             
   myEnvironment:                                                                                         
