@@ -1,14 +1,23 @@
 service: serverless-hello-world
 
+custom:                                                                                                  
+  myStage: ${opt:stage, self:provider.stage}                                                             
+  myEnvironment:                                                                                         
+    dev:                                                                                                 
+      GLOBAL_ENV: "This is global"                                                                       
+
 provider:
   name: aws
   runtime: nodejs6.10
   environment:
-    MESSAGE: "I am ${opt:stage}"
+    MESSAGE: "I am ${opt:stage}"                                                                         
+    GLOBAL_ENV: ${self:custom.myEnvironment.${self:custom.myStage}.GLOBAL_ENV}                           
 
 functions:
   helloWorld:
     handler: handler.helloWorld
+    environment:                                                                                         
+      LOCAL_ENV: "This is local"                                                                         
     events:
       - http:
           path: /
