@@ -4,7 +4,7 @@ custom:
   myStage: ${opt:stage, self:provider.stage}                                                             
   myEnvironment:                                                                                         
     dev:                                                                                                 
-      GLOBAL_ENV: "This is global"   
+      GLOBAL_ENV: "This is global!"   
 
 provider:
   name: aws
