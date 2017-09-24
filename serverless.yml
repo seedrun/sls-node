@@ -5,14 +5,15 @@ custom:
   myEnvironment:                                                                                         
     dev:                                                                                                 
       GLOBAL_ENV: "This is global"   
-    pr:
+    pr10:
+      GLOBAL_ENV: "This is global PR10"   
 
 provider:
   name: aws
   runtime: nodejs6.10
   environment:
     MESSAGE: "I am ${opt:stage}"                                                                         
-    GLOBAL_ENV: "${self:custom.myEnvironment.${self:custom.myStage, 'pr'}.GLOBAL_ENV}"                           
+    GLOBAL_ENV: "${self:custom.myEnvironment.${self:custom.myStage}.GLOBAL_ENV}"                           
 
 functions:
   helloWorld:
