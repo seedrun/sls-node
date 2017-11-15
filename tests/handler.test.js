@@ -1,4 +1,4 @@
-import * as handler from '../handler';
+const handler = require('../handler');
 
 test('hello', async () => {
   const event = 'event';
@@ -8,5 +8,5 @@ test('hello', async () => {
     expect(typeof response.body).toBe("string");
   }
 
-  await handler.main(event, context, callback);
+  handler.main(event, context, callback);
 });
