@@ -1,0 +1,19 @@
+{
+  "name": "sls-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fwang/sls-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fwang/sls-node/issues"
+  },
+  "homepage": "https://github.com/fwang/sls-node#readme"
+}
