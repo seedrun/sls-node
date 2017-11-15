@@ -1,4 +1,4 @@
-service: serverless-hello-world
+service: sls-node
 
 custom:
   myStage: ${opt:stage, self:provider.stage}
