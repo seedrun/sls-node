@@ -6,7 +6,7 @@ module.exports.main = (event, context, callback) => {
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
-    body: `Hello MM!\n`
+    body: `Hello M!\n`
   };
 
   callback(null, response);
