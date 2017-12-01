@@ -4,7 +4,7 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "test": "jest && exit 1;"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
