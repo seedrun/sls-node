@@ -19,3 +19,4 @@ functions:
           path: /
           method: get
           cors: true
+
