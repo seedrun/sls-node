@@ -9,7 +9,7 @@ module.exports.helloWorld = (event, context, callback) => {
     body: `This is ready to go live: ${process.env.MESSAGE}, secret is ${process.env.MY_SECRET}.\n`
   };
   
-  throw 'Error';
+  console.log(response.test.key);
 
   callback(null, response);
 };
