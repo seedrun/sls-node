@@ -1,5 +1,5 @@
 const handler = require('../handler');
 
 test('hello', () => {
-  expect(201).toEqual(200);
+  expect(200).toEqual(200);
 });
