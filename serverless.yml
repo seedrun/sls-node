@@ -1,15 +1,10 @@
 service: sls-node
 
-custom:
-  myStage: ${opt:stage, self:provider.stage}
-  myEnvironment:
-    dev:
-      MESSAGE: "I am ${opt:stage}"
-
 provider:
   name: aws
   runtime: nodejs6.10
-  environment: ${self:custom.myEnvironment.${self:custom.myStage}}                                       
+  environment:
+    MESSAGE: ${env.PASSWORD}
 
 functions:
   helloWorld:
