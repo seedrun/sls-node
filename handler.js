@@ -6,7 +6,7 @@ module.exports.main = (event, context, callback) => {
     headers: {
       'Access-Control-Allow-Origin': '*',
     },
-    body: `Hello ${process.env.MESSAGE}!\n`
+    body: `Hello ${process.env.PASSWORD}!\n`
   };
 
   callback(null, response);
